@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasia</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--my css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar">
+        <h1>Fantasia</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--side navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right ;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!--contact -->
+    <h1 style="margin-top: 30px;" class="contacttitle">Contact Us</h1>
+    <div class="contact">
+        <form class="contactform">
+            <h5>Name:</h5>
+            <input type="text" id="inputname">
+            <h5>Email:</h5>
+            <input type="email" id="inputemail">
+             <h5>Message:</h5>
+            <input type="text" id="inputmsg">
+          
+            <button>Submit</button>
+           
+          
+        </form>
+    </div>
+   
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2 class="headingtext">Fantasia</h2>
+                <p>Our mission is to offer a diverse selection of high-quality fashion items that inspire and delight.
+                    <br>If you have any questions, feel free to reach out through our customer service channels, where we
+                    are always ready to assist you. </p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color:white;"></i>
+                    <i class="fa-brands fa-twitter" style="color:white;"></i>
+                    <i class="fa-brands fa-facebook" style="color:white;"></i>
+                </div>
+            </div>
+        </div>
+        <p>© 2024 Fantasia.com All rights reserved.</p>
+    </div>
+    <!--my javascript-->
+    <script src="collection.js"></script>
+</body>
+
+</html>
